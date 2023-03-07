@@ -12,7 +12,7 @@ public class ChromeAutomation
     @Test
     public void chrometest()
     {
-        System.out.println("Program Running");
+        System.out.println("Program is Running");
 
         WebDriver driver;
         System.setProperty("webdriver.chrome.driver","D:/Academic Documents/Software Testing EPAM/chromedriver.exe");

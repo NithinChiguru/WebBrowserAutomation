@@ -12,7 +12,7 @@ public class EdgeAutomation
     @Test
     public void edgetest()
     {
-        System.out.println("Program Running");
+        System.out.println("Program is Running");
 
         WebDriver driver;
         System.setProperty("webdriver.edge.driver","D:/Academic Documents/Software Testing EPAM/msedgedriver.exe");

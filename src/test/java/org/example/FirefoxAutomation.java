@@ -14,7 +14,7 @@ public class FirefoxAutomation
     @Test
     public void firefoxtest()
     {
-        System.out.println("Program Running");
+        System.out.println("Program is Running");
 
         WebDriver driver;
         System.setProperty("webdriver.gecko.driver","D:/Academic Documents/Software Testing EPAM/firefoxdriver.exe");
