@@ -7,21 +7,17 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 
-
-public class FirefoxAutomation
+public class BrowserAutomation
 {
     @Test
-    public void firefoxtest()
+    public void test()
     {
         System.out.println("Program is Running");
 
         WebDriver driver;
-        System.setProperty("webdriver.gecko.driver","D:/Academic Documents/Software Testing EPAM/firefoxdriver.exe");
-        driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.get("https://www.github.com/login");
         System.out.println(driver.getTitle());
 
@@ -54,3 +50,6 @@ public class FirefoxAutomation
         jsExecutor.executeScript("arguments[0].setAttribute('style', 'background: blue; border: 2px solid red;');", element);
     }
 }
+
+
+

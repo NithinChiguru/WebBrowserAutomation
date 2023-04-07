@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class ChromeAutomation
 {
@@ -16,7 +17,9 @@ public class ChromeAutomation
 
         WebDriver driver;
         System.setProperty("webdriver.chrome.driver","D:/Academic Documents/Software Testing EPAM/chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeOptions option = new ChromeOptions();
+        option.addArguments("--remote-allow-origins=*");
+        driver = new ChromeDriver(option);
         driver.get("https://www.github.com/login");
         System.out.println(driver.getTitle());
 
